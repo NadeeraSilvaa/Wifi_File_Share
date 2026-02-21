@@ -1,0 +1,6 @@
+node_modules/
+# Uploaded files (created at runtime if missing)
+shared-files/
+.env
+*.log
+.DS_Store

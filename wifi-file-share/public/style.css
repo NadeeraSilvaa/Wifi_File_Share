@@ -1,0 +1,302 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 0 0 0.5rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.device-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.device-row #device-label {
+  flex: 1;
+  min-width: 0;
+}
+
+.name-device-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  color: #069;
+  background: transparent;
+  border: 1px solid #069;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.name-device-btn:hover,
+.name-device-btn:focus {
+  background: #e8f4f8;
+}
+
+.drop-zone {
+  border: 2px dashed #bbb;
+  border-radius: 8px;
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.drop-zone.dragover {
+  border-color: #069;
+  background: #e8f4f8;
+}
+
+.add-files-btn {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: #069;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  min-height: 44px;
+  min-width: 120px;
+}
+
+.add-files-btn:hover,
+.add-files-btn:focus {
+  background: #057;
+}
+
+.add-files-btn:active {
+  background: #046;
+}
+
+.other-devices {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.other-devices h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.other-devices p {
+  margin: 0 0 0.75rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.url-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.url-row code {
+  flex: 1;
+  min-width: 0;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  background: #f0f0f0;
+  border-radius: 4px;
+  word-break: break-all;
+}
+
+.copy-btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  color: #069;
+  background: transparent;
+  border: 1px solid #069;
+  border-radius: 6px;
+  cursor: pointer;
+  min-height: 44px;
+}
+
+.copy-btn:hover,
+.copy-btn:focus {
+  background: #e8f4f8;
+}
+
+.qr-wrap {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.qr-wrap img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.qr-caption {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.file-list-section {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.file-list-section h2 {
+  margin: 0 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.file-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.file-list .empty {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+.file-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.file-item:last-child {
+  border-bottom: none;
+}
+
+.file-item a.file-name-link {
+  flex: 1;
+  min-width: 0;
+  color: #069;
+  text-decoration: none;
+  word-break: break-all;
+  padding: 0.25rem 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.file-item a.file-name-link:hover {
+  text-decoration: underline;
+}
+
+.file-meta {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.file-device {
+  font-size: 0.8rem;
+  color: #666;
+  max-width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  color: #069;
+  background: transparent;
+  border: 1px solid #069;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 36px;
+  line-height: 1.4;
+}
+
+.download-btn:hover,
+.download-btn:focus {
+  background: #e8f4f8;
+}
+
+.delete-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.85rem;
+  color: #c00;
+  background: transparent;
+  border: 1px solid #c00;
+  border-radius: 4px;
+  cursor: pointer;
+  min-height: 36px;
+}
+
+.delete-btn:hover,
+.delete-btn:focus {
+  background: #ffe8e8;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .drop-zone {
+    padding: 1.5rem;
+  }
+
+  .url-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .url-row code {
+    text-align: center;
+  }
+}

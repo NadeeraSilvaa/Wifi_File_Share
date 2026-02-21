@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WiFi File Share</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>WiFi File Share</h1>
+    <p class="tagline">Drop files here or add from any device on your network</p>
+    <div class="device-row">
+      <span id="device-label">Uploading as: —</span>
+      <button type="button" id="name-device-btn" class="name-device-btn">Name this device</button>
+    </div>
+    <div id="drop-zone" class="drop-zone">
+      <input type="file" id="file-input" multiple hidden>
+      <button type="button" id="add-files-btn" class="add-files-btn">Add files</button>
+    </div>
+    <section id="other-devices" class="other-devices" aria-label="Open on other devices">
+      <h2>Open on other devices</h2>
+      <p>On your phone or another computer, open this link (same WiFi):</p>
+      <div class="url-row">
+        <code id="share-url">Loading…</code>
+        <button type="button" id="copy-url-btn" class="copy-btn">Copy</button>
+      </div>
+      <div class="qr-wrap">
+        <img id="qr-code" src="" alt="Scan to open on your phone" width="200" height="200">
+        <p class="qr-caption">Scan with your phone camera to open</p>
+      </div>
+    </section>
+    <section id="file-list-section" class="file-list-section" aria-label="Shared files">
+      <h2>Shared files</h2>
+      <ul id="file-list" class="file-list"></ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
