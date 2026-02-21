@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Runtime / uploaded files (created at startup if missing)
+shared-files/
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Optional npm cache (if used)
+.npm
+
+# Optional local config overrides (if you add any later)
+config.local.js
+config.local.json
